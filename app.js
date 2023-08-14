@@ -11,6 +11,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 const scootersRoute = require('./routes/scooters');
 app.use('/scooters', scootersRoute);
+const scootersRoute = require('./routes/scooters');
+app.use('/scooters', scootersRoute);
 
 //Please don't delete this health API
 app.use('/api/health', (req, res) => {
